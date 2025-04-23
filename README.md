@@ -43,7 +43,12 @@ A sample dataset was generated with:
 
 ## 🖼 Preview
 
-*Coming soon: screenshots or demo video of the dashboard.*
+<img width="589" alt="image" src="https://github.com/user-attachments/assets/c949f975-9601-4231-bab7-2d947319d31e" /> 
+<img width="585" alt="image" src="https://github.com/user-attachments/assets/e0120b38-4be1-43d0-8c18-0a60cc4bcc8c" />
+<img width="585" alt="image" src="https://github.com/user-attachments/assets/9a5c7b52-c3db-448b-bf1a-d609ca6d850a" />
+
+
+
 
 ---
 
