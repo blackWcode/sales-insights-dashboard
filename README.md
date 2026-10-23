@@ -35,9 +35,9 @@ A sample dataset was generated with:
 
 ---
 
-## 💡 Business Value
+## 💡 What This Project Shows
 
-> "The dashboard reduces manual reporting time by over 60%, uncovers product and regional trends, and supports proactive decision-making for sales and marketing teams."
+This is a portfolio exercise built on generated data, so it has no measured business impact. It shows how I model sales data with Power Query and DAX, and how I design an interactive report that non-technical users can read at a glance.
 
 ---
 
@@ -48,10 +48,6 @@ A sample dataset was generated with:
 <img width="585" alt="image" src="https://github.com/user-attachments/assets/9a5c7b52-c3db-448b-bf1a-d609ca6d850a" />
 
 🖥 View the full interactive Power BI dashboard here (requires Power BI Desktop):
-[sales_dashboard.pbix](./reports/sales_dashboard.pbix)
-
----
-📂 reports  
-└── [sales_dashboard.pbix](./reports/sales_dashboard.pbix)
+[sales_dashboard.pbix](./sales_dashboard.pbix)
 
 
