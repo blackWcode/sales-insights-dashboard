@@ -2,6 +2,8 @@
 
 This project showcases a dynamic sales dashboard built using Excel and Power BI. It transforms raw monthly sales data into visual insights, helping stakeholders make informed decisions quickly and confidently.
 
+🌐 **Website:** https://blackwcode.github.io/sales-insights-dashboard/ (project page with an interactive web preview built from `sales_data.xlsx`)
+
 ---
 
 ## 🔧 Tools & Technologies
