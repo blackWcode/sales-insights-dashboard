@@ -121,8 +121,12 @@
           <p>A lightweight web version recreated from <code>sales_data.xlsx</code>. Use the slicers to filter it. The full interactive report is in <code>sales_dashboard.pbix</code>.</p>
         </div>
 
-        <div class="dash reveal">
+        <div class="dash reveal" id="dash">
+          <div class="tip" id="tip" role="tooltip" hidden></div>
           <div class="slicers" role="group" aria-label="Slicers">
+            <label>Month
+              <select id="f-month"><option value="">All months</option></select>
+            </label>
             <label>Region
               <select id="f-region"><option value="">All regions</option></select>
             </label>
@@ -134,6 +138,18 @@
             </label>
             <button class="reset" id="f-reset" type="button">Reset</button>
           </div>
+
+          <div class="dash-bar">
+            <div class="metric-toggle" role="radiogroup" aria-label="Metric shown in breakdowns">
+              <span class="mt-label">Show</span>
+              <button type="button" role="radio" aria-checked="true" data-metric="rev" class="is-on">Revenue</button>
+              <button type="button" role="radio" aria-checked="false" data-metric="pr">Profit</button>
+              <button type="button" role="radio" aria-checked="false" data-metric="mg">Margin</button>
+              <button type="button" role="radio" aria-checked="false" data-metric="u">Units</button>
+            </div>
+            <div class="chips" id="chips" aria-live="polite"></div>
+          </div>
+          <p class="dash-hint"><span aria-hidden="true">👆</span> Click any bar, heatmap cell or month to filter the whole dashboard. Click it again to clear.</p>
 
           <div class="kpis" aria-live="polite">
             <div class="kpi"><span class="kpi-label">Revenue</span><span class="kpi-val" id="k-rev">–</span></div>
@@ -168,13 +184,13 @@
 
           <div class="panel panel-wide">
             <div class="panel-head">
-              <h3>Profit margin · region × product</h3>
-              <span class="panel-sub">Highest and lowest performers highlighted</span>
+              <h3 id="heat-title">Profit margin · region × product</h3>
+              <span class="panel-sub">▲ highest · ▼ lowest</span>
             </div>
             <div id="heat" class="heat" role="table" aria-label="Profit margin by region and product"></div>
           </div>
 
-          <p class="dash-note">Bars show revenue, with profit as the purple line beneath; ★ marks the highest margin in each panel. Figures are computed from the generated sample dataset. Because the data was generated, differences between groups are small; the dashboard's value is in how quickly they can be found and compared.</p>
+          <p class="dash-note">★ marks the highest value for the selected metric in each panel. Figures are computed from the generated sample dataset. Because the data was generated, differences between groups are small; the dashboard's value is in how quickly they can be found and compared.</p>
         </div>
       </div>
     </section>
